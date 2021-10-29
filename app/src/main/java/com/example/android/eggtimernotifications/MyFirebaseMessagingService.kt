@@ -31,7 +31,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
      * @param remoteMessage Object representing the message received from Firebase Cloud Messaging.
      */
     // [START receive_message]
-    override fun onMessageReceived(remoteMessage: RemoteMessage?) {
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
         // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
         Log.d(TAG, "From: ${remoteMessage?.from}")
 
@@ -45,7 +45,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     }
     // [END receive_message]
 
-    override fun onNewToken(token: String?){
+    override fun onNewToken(token: String){
         Log.d(TAG, "Refreshed toke: $token")
 
         sendRegistrationToServer(token)
