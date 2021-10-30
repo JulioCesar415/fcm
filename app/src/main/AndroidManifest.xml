@@ -18,6 +18,7 @@
           package="com.example.android.eggtimernotifications">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/egg_icon"
         android:label="@string/app_name"
