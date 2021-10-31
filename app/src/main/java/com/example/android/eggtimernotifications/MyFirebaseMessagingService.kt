@@ -48,7 +48,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     override fun onNewToken(token: String){
         Log.d(TAG, "Refreshed toke: $token")
 
-        sendRegistrationToServer(token)
+        sendNotification(token)
     }
 
     // [END on_new_token]
@@ -58,7 +58,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
      *
      * @param token The new token.
      */
-    private fun sendRegistrationToServer(token: String?) {
+    private fun sendRegistrationToServer(token: String) {
         // TODO: Implement this method to send token to your app server.
     }
 
