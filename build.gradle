@@ -20,6 +20,7 @@ buildscript {
     ext.kotlin_version = '1.5.30'
     repositories {
         google()
+        mavenCentral()
         jcenter()
         
     }
@@ -30,8 +31,6 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
 
-//        to enable firebase products
-        classpath 'com.google.gms:google-services:4.3.10'
     }
 }
 
